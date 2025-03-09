@@ -6,9 +6,7 @@ const closeButtons = document.querySelectorAll('.close');
 // Open modal when product item is clicked
 productItems.forEach(item => {
     item.addEventListener('click', (e) => {
-        // Prevent triggering modal if clicking the button
         if (e.target.tagName === 'BUTTON' || e.target.closest('a')) return;
-
         const modalId = item.getAttribute('data-modal');
         const modal = document.getElementById(modalId);
         modal.style.display = 'flex';
