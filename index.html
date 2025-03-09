@@ -7,40 +7,88 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>🌙 Kuih Raya Ramadan Delight 🌙</h1>
-        <p>Homemade treats for your festive joy!</p>
+    <!-- Header Section -->
+    <header class="fade-in">
+        <h1>𝓡𝓪𝔂𝔂𝓪𝓷 𝓒𝓸𝓸𝓴𝓲𝓮𝓼</h1>
+        <p>Enjoy our delicious homemade kuih raya this Ramadan!</p>
     </header>
 
+    <!-- Product Section -->
     <section class="products">
         <h2>Our Kuih Raya Selection</h2>
-        <div class="product-list">
-            <div class="product">
-                <img src="gambar\cornflakemadu.jpg" alt="Cornflake Madu">
-                <h3>Cornflake Madu</h3>
-                <p>Crunchy & sweet - RM 15/jar</p>
+        <div class="product-grid">
+            <div class="product-item slide-in" style="animation-delay: 0.1s;" data-modal="modal1">
+                <img src="gambar/tartnenas.jpg" alt="Kuih Tart Nenas">
+                <h3>Kuih Tart Nenas</h3>
+                <p>RM 25 per jar</p>
+                <p>Click on image for details</p>
+                <a href="https://wa.me/60123456789"><button class="bounce">Contact to Order</button></a>
             </div>
-            <div class="product">
-                <img src="gambar\tartnenas.jpg" alt="Tart Nenas">
-                <h3>Tart Nenas</h3>
-                <p>Melt-in-mouth goodness - RM 20/jar</p>
-            </div>
-            <div class="product">
-                <img src="gambar\semburik.jpg" alt="Biskut Semperit">
+            <div class="product-item slide-in" style="animation-delay: 0.3s;" data-modal="modal2">
+                <img src="gambar/semburik.jpg" alt="Biskut Semperit">
                 <h3>Biskut Semperit</h3>
-                <p>Buttery bliss - RM 18/jar</p>
+                <p>RM 20 per jar</p>
+                <p>Click on image for details</p>
+                <a href="https://wa.me/60123456789"><button class="bounce">Contact to Order</button></a>
+            </div>
+            <div class="product-item slide-in" style="animation-delay: 0.5s;" data-modal="modal3">
+                <img src="gambar/cornflakemadu.jpg" alt="Cornflakes Madu">
+                <h3>Cornflakes Madu</h3>
+                <p>RM 22 per jar</p>
+                <p>Click on image for details</p>
+                <a href="https://wa.me/60123456789"><button class="bounce">Contact to Order</button></a>
             </div>
         </div>
     </section>
 
+    <!-- Modals for Product Details -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="gambar/tartnenas.jpg" alt="Kuih Tart Nenas">
+            <h3>Kuih Tart Nenas</h3>
+            <p>Price: RM 25 per jar</p>
+            <p>Description: Delicious pineapple tarts with a buttery crust and sweet filling, perfect for Ramadan celebrations.</p>
+            <a href="https://wa.me/60123456789"><button class="bounce">Order Now</button></a>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="gambar/semburik.jpg" alt="Biskut Semperit">
+            <h3>Biskut Semperit</h3>
+            <p>Price: RM 20 per jar</p>
+            <p>Description: Melt-in-your-mouth butter cookies shaped like flowers, a classic Raya treat.</p>
+            <a href="https://wa.me/60123456789"><button class="bounce">Order Now</button></a>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="gambar/cornflakemadu.jpg" alt="Cornflakes Madu">
+            <h3>Cornflakes Madu</h3>
+            <p>Price: RM 22 per jar</p>
+            <p>Description: Crispy cornflakes coated with honey, a sweet and crunchy delight for all ages.</p>
+            <a href="https://wa.me/60123456789"><button class="bounce">Order Now</button></a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
     <section class="contact">
-        <h2>Order Now!</h2>
-        <p>WhatsApp Danish: <strong>016-475 6831</strong></p>
-        <p>Pre-orders close on March 25, 2025. Limited stock!</p>
+        <h2>Contact Us</h2>
+        <p>Place your orders via WhatsApp or email!</p>
+        <p><strong>WhatsApp:</strong> +60 16-4756 831</p>
+        <p><strong>Email:</strong> dirfan120@gmail.com</p>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Kuih Raya Ramadan Sale. All rights reserved.</p>
+        <p>© 2025 Kuih Raya Ramadan Sale. All rights reserved.</p>
     </footer>
+
+    <!-- JavaScript for Modal -->
+    <script src="script.js"></script>
 </body>
 </html>
